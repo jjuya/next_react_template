@@ -1,0 +1,17 @@
+{
+  "name": "next_template",
+  "version": "1.0.0",
+  "repository": "https://github.com/jjuya/next_template.git",
+  "author": "jjuya <404_jjuya@kakao.com>",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
