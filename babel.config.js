@@ -72,7 +72,7 @@ module.exports = (api) => {
 				legacy: true,
 			},
 		],
-		['@babel/plugin-syntax-dynamic-import'],op
+		['@babel/plugin-syntax-dynamic-import'],
 		['@babel/plugin-proposal-optional-chaining'],
 	]
 
