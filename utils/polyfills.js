@@ -7,7 +7,10 @@
 // Add your polyfills
 import 'core-js/stable'
 import 'raf/polyfill'
+
+// promise 관련 설정
 require('es6-promise').polyfill()
+
 // This files runs at the very beginning (even before React and Next.js core)
 console.log('Load your polyfills')
 
