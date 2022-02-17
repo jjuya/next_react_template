@@ -16,7 +16,6 @@ module.exports = (api) => {
 		],
 	]
 
-	// dotenv setting
 	const env = {
 		development: {
 			plugins: [
@@ -26,6 +25,10 @@ module.exports = (api) => {
 						moduleName: '@env',
 						path: '.env',
 					},
+				],
+				[
+					'babel-plugin-styled-components',
+					{ ssr: true, displayName: true, preprocess: false },
 				],
 			],
 		},
@@ -38,6 +41,10 @@ module.exports = (api) => {
 						path: '.env.staging',
 					},
 				],
+				[
+					'babel-plugin-styled-components',
+					{ ssr: true, displayName: true, preprocess: false },
+				],
 			],
 		},
 		production: {
@@ -49,11 +56,16 @@ module.exports = (api) => {
 						path: '.env.production',
 					},
 				],
+				[
+					'babel-plugin-styled-components',
+					{ ssr: true, displayName: true, preprocess: false },
+				],
 			],
 		},
 	}
 
 	const plugins = [
+		['inline-react-svg'],
 		[
 			'dotenv-import',
 			{
@@ -74,6 +86,14 @@ module.exports = (api) => {
 		],
 		['@babel/plugin-syntax-dynamic-import'],
 		['@babel/plugin-proposal-optional-chaining'],
+		['styled-components', { ssr: true, displayName: true, preprocess: false }],
+		[
+			'import',
+			{
+				libraryName: 'antd',
+				style: false,
+			},
+		],
 	]
 
 	return {
