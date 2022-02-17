@@ -87,13 +87,6 @@ module.exports = (api) => {
 		['@babel/plugin-syntax-dynamic-import'],
 		['@babel/plugin-proposal-optional-chaining'],
 		['styled-components', { ssr: true, displayName: true, preprocess: false }],
-		[
-			'import',
-			{
-				libraryName: 'antd',
-				style: false,
-			},
-		],
 	]
 
 	return {

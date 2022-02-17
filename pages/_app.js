@@ -3,6 +3,8 @@ import { ThemeProvider } from 'styled-components'
 import { theme, GlobalStyle } from '../styles'
 import { Fonts } from '../utils/fonts'
 
+import '../styles/global.css'
+
 export default function App({ Component, pageProps }) {
 	// using fontfaceobserver
 	useEffect(async () => {
