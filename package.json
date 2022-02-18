@@ -9,8 +9,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build:storybook": "build-storybook -s public"
   },
   "dependencies": {
     "fontfaceobserver": "^2.1.0",
@@ -39,7 +39,9 @@
     "babel-plugin-inline-react-svg": "^2.0.1",
     "babel-plugin-styled-components": "^2.0.2",
     "core-js": "^3.21.0",
+    "css-loader": "^6.6.0",
     "es6-promise": "^4.2.8",
+    "file-loader": "^6.2.0",
     "prettier": "^2.5.1"
   }
 }
